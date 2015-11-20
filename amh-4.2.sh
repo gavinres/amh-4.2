@@ -538,10 +538,10 @@ function InstallAMS()
 
 # AMH Installing ****************************************************************************
 CheckSystem;
-ConfirmInstall;
-InputDomain;
-InputMysqlPass;
-InputAMHPass;
+#ConfirmInstall;
+#InputDomain;
+#InputMysqlPass;
+#InputAMHPass;
 Timezone;
 CloseSelinux;
 DeletePackages;
