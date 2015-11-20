@@ -19,7 +19,8 @@ RamTotal='';
 RamSwap='';
 #设置静默安装模式
 InstallModel='1';
-Domain=`ifconfig  | grep 'inet addr:'| egrep -v ":192.168|:172.1[6-9].|:172.2[0-9].|:172.3[0-2].|:10.|:127." | cut -d: -f2 | awk '{ print $1}'`;
+#Domain=`ifconfig  | grep 'inet addr:'| egrep -v ":192.168|:172.1[6-9].|:172.2[0-9].|:172.3[0-2].|:10.|:127." | cut -d: -f2 | awk '{ print $1}'`;
+Domain=`localhost`;
 #设置默认mysql密码
 MysqlPass='admin';
 #设置默认amh后台密码
@@ -204,7 +205,7 @@ function InstallReady()
 	mkdir -p $AMHDir/conf;
 	mkdir -p $AMHDir/packages/untar;
 	chmod +Rw $AMHDir/packages;
-	cp -vf ./packages/*.tar.gz $AMHDir/packages;
+	cp -vf ./packages/* $AMHDir/packages;
 
 	mkdir -p /root/amh/;
 	chmod +Rw /root/amh;
