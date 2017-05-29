@@ -6,7 +6,7 @@ clear;
 echo '================================================================';
 echo ' [LNMP/Nginx] Amysql Host - AMH 4.2 ';
 echo ' http://Amysql.com';
-echo ' Modified By SuJianchao';
+echo ' Modified By Gavinres';
 echo '================================================================';
 
 
